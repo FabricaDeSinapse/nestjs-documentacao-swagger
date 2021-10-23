@@ -2,7 +2,7 @@ export class CreateUserDto {
   /**
    * O nome será utilizado para qualquer coisa (Perfil, Home Page, etc) que precise exibir
    * informações da pessoa conectada.
-   * @example Paulo Salvatore
+   * @example "Paulo Salvatore"
    */
   name: string;
 
