@@ -65,3 +65,17 @@ Pronto!
 
 ![image-20211023123352769](C:\GitHub\FabricaDeSinapse_Videos\nestjs-documentacao-swagger\images\image-20211023123352769.png)
 
+## Tags
+
+As tags servem para organizar endpoints.
+
+Elas são declaradas no `main.ts` e utilizadas nos `controllers`.
+
+### Vamos gerar um recurso
+
+- `users`
+
+```bash
+nest g resource users
+```
+
