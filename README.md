@@ -1,8 +1,8 @@
 # NestJS - Swagger - Documentação de Endpoint
 
-O Swagger (*aka* OpenApi) é uma biblioteca muito conhecida no universo backend, estando disponível para diversas linguagens e frameworks. Ela gera um site interno no seu backend que descreve, com muitos detalhes, cada endpoint e estrutura de entidades presentes na sua aplicação.
+O Swagger (_aka_ OpenApi) é uma biblioteca muito conhecida no universo backend, estando disponível para diversas linguagens e frameworks. Ela gera um site interno no seu backend que descreve, com muitos detalhes, cada endpoint e estrutura de entidades presentes na sua aplicação.
 
-Além disso, também oferece uma interface para que a API seja testada, sem precisar de um cliente HTTP externo (*aka* Postman, Insomnia, Thunder Client, etc) e, principalmente, com configuração ZERO!
+Além disso, também oferece uma interface para que a API seja testada, sem precisar de um cliente HTTP externo (_aka_ Postman, Insomnia, Thunder Client, etc) e, principalmente, com configuração ZERO!
 
 Como de costume, o Nest resolve toda a parte chata da configuração e a gente só precisa declarar algumas linhas de código para integrar essa poderosa API.
 
@@ -63,7 +63,7 @@ http://localhost:3000/api/
 
 Pronto!
 
-![Documentação com Swagger](images\image-20211023131152053.png)
+![Documentação com Swagger](images/image-20211023131152053.png)
 
 ## Tags
 
@@ -87,23 +87,23 @@ Assim que os arquivos forem gerados, basta marcar o `UsersController` com a tag 
 @ApiTags('users')
 @Controller('users')
 export class UsersController {
-	// Endpoints
+  // Endpoints
 }
 ```
 
 Salve o arquivo para que o Nest recarregue a aplicação automaticamente e atualize a página do swagger.
 
-![Endpoints de Users](images\image-20211023124429471.png)
+![Endpoints de Users](images/image-20211023124429471.png)
 
 ## Testando requisições
 
 Para testar a requisições, basta clicar em cima de um dos endpoints desejados para visualizar a sua estrutura.
 
-![Endpoint de GET /users](images\image-20211023124624314.png)
+![Endpoint de GET /users](images/image-20211023124624314.png)
 
 Clique no botão `Try it out` e depois em `Execute` para realizar a requisição HTTP.
 
-![Requisição HTTP em GET /users](images\image-20211023124718186.png)
+![Requisição HTTP em GET /users](images/image-20211023124718186.png)
 
 ## Detalhando um pouco melhor os endpoints
 
@@ -157,9 +157,9 @@ export class CreateUserDto {
 
 Com isso, o resultado é incrível!
 
-![Exemplos no Request body](images\image-20211023125815253.png)
+![Exemplos no Request body](images/image-20211023125815253.png)
 
-![Schemas com exemplos e descrição](images\image-20211023125857466.png)
+![Schemas com exemplos e descrição](images/image-20211023125857466.png)
 
 ## Melhorando a declaração das entidades
 
@@ -222,7 +222,7 @@ Para isso, precisamos ativar a opção `introspectComments` de configuração do
 
 E, pronto! Teremos o mesmo resultado 🚀
 
-![Schemas com exemplos e descrição](images\image-20211023125857466.png)
+![Schemas com exemplos e descrição](images/image-20211023125857466.png)
 
 ## Próximos passos
 
